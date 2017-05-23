@@ -1,6 +1,6 @@
 yunqi = require("../lib/yunqi")
 
-client = yunqi("http://apify.shopex.cn/router", "xjMeB4h", "FkJtb5weE4dSNYX8waj4");
+client = yunqi("http://apify.xyunqi.com/router", "xjMeB4h", "FkJtb5weE4dSNYX8waj4");
 
 client.rpc("shopex.query.appqueue", {
     async: false,
