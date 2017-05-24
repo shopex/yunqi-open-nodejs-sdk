@@ -1,11 +1,11 @@
 yunqi = require("../lib/yunqi")
 
-client = yunqi("http://apify.xyunqi.com/router", "xjMeB4h", "FkJtb5weE4dSNYX8waj4");
+client = yunqi("http://apify.xyunqi.com/router", "test", "test");
 
-client.rpc("shopex.query.appqueue", {
+client.rpc("wsc.search_order_lists", {
     async: false,
-    type: "GET",
-    params: {"user_eid":"1233","app_id":"232er"},
+    type: "POST",
+    params: {"page_no":"1","page_size":"40","start_time":"2016-10-01 00:00:00","end_time":"2016-10-01 22:00:00"},
     success: function(result){
         console.info("test-success:");
         console.info(result)
